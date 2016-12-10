@@ -1,0 +1,48 @@
+.navbar {
+    background-color: rgba(0, 0, 0, .5);
+    padding: 5px;
+    border-radius: 0;
+    box-sizing: border-box;
+
+    .nav-item {
+        margin: 0;
+
+        .nav-link {
+            transition: color .3s; 
+            color: #dcdcdc;
+            font-weight: 100;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        &:after {
+            content: '';
+            transition: width .3s; 
+            width: 0;
+            display: block;
+            background: white;
+            height: 2px;
+            position: relative;
+            top: 5px;
+        }
+
+        &.active,
+        &:hover {
+            .nav-link {
+                color: white;
+            }
+
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+
+    .brand {
+        float: right;
+
+        img {
+            width: 60px;
+        }
+    }
+}
