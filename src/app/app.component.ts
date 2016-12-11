@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import {Component} from "@angular/core";
 
 @Component({
-  selector: 'feb-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.less']
+  selector : 'feb-root',
+  template : `
+    <feb-home></feb-home>
+  `,
 })
 export class AppComponent {
-  title = 'feb works!';
+
 }
